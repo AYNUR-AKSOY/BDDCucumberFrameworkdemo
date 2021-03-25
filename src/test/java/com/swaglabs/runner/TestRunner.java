@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         // plugin is for reports
-        plugin = {"pretty", "html:target/site/cucumber-pretty.html"},
+        plugin = {"pretty", "html:target/site/cucumber-pretty.html","json:target/cucumber.json"},
 
         snippets = CucumberOptions.SnippetType.CAMELCASE,
 
